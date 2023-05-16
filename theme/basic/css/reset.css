@@ -3,7 +3,7 @@
 
 *{margin: 0;padding: 0;border: 0;box-sizing: border-box;}
 html{font-size: 62.5%; scroll-behavior: smooth;}/* -webkit-user-select:none; 모바일 드래그 막기 */
-body{min-width: 320px;max-width: 100%;color: #000; font-family: 'Noto Sans KR', sans-serif; font-size: 1.6rem;    letter-spacing: -0.025em; box-sizing: border-box; overflow: hidden;}
+body{min-width: 320px;max-width: 100%;color: #000; font-family: 'Poppins','Noto Sans KR', sans-serif; font-size: 1.6rem;    letter-spacing: -0.025em; box-sizing: border-box; overflow: hidden;}
 ol,ul,li{list-style: none;}
 table,th,td{border-collapse: collapse;/*border-spacing: 0;*/}
 input{font-family: 'Noto Sans CJK', sans-serif;}
@@ -17,6 +17,7 @@ label{cursor: pointer;}
 label img{pointer-events: none;}
 a{text-decoration: none;color: #000;}
 img{display: block;border: 0;max-width: 100%; width: 100%;}
+button {cursor: pointer;}
 .icon { width: auto; max-width: 100%; } 
 
 

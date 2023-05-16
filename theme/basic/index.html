@@ -37,8 +37,7 @@ include_once(G5_THEME_PATH.'/head.php');
   <div class="header-wrap">
     <div class="logo">
       <img src="./img/logo.svg" alt="로고" class="icon" >
-    </div>
-  </div>
+    </div>  
   <header class="header">
     <div class="inner flex">
         <ul class="gnb flex">
@@ -95,12 +94,13 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div> 
   </header>
+</div>
 <div id="main">
   <section class="sec01">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="tit-wr">
+          <div class="title-wr">
               <h1>FOR YOUR HAPPY</h1>
               <h1>CATERING</h1>
               <p class="txt">
@@ -108,15 +108,28 @@ include_once(G5_THEME_PATH.'/head.php');
                 또다시 찾고 싶은 도원외식산업입니다.
               </p>
               <button class="more-btn">
-                <span>VIEW MORE</span>
+                <p>VIEW MORE</p>
+                <span class="material-symbols-outlined">east</span>
+              </button>
+          </div>
+          <img src="./img/slide_01.jpg" alt="메인슬라이드사진1">
+        </div>
+        <div class="swiper-slide">
+          <div class="title-wr">
+              <h1>FOR YOUR HAPPY</h1>
+              <h1>CATERING</h1>
+              <p class="txt">
+                신선하고 품격 있는 맛과 서비스 그리고 신뢰와 감동<br>
+                또다시 찾고 싶은 도원외식산업입니다.
+              </p>
+              <button class="more-btn">
+                <p>VIEW MORE</p>
                 <span class="material-symbols-outlined">east</span>
               </button>
           </div>
           <img src="./img/slide_01.jpg" alt="메인슬라이드사진1">
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </div>      
   </section>
 
@@ -125,11 +138,11 @@ include_once(G5_THEME_PATH.'/head.php');
       <div class="tit-wr">
         <h1>DOWON FOOD</h1>
         <h3>도원외식산업</h3>
-        <p>도원외신산업은 365일 가장 신선한 재료를 사용해<br>최고의 서비스와 품질을 제공합니다.</p>
+        <p>도원외식산업은 365일 가장 신선한 재료를 사용해<br>최고의 서비스와 품질을 제공합니다.</p>
       </div>
       <div class="info-wr flex">
-        <div class="info-box-wr border-ra">
-          <div class="img-box">
+        <div class="info-box-wr">
+          <div class="img-box border-ra">
             <img src="./img/sec01_1.jpg" alt="신선한재료사진">
           </div>
           <div class="txt-box">
@@ -141,21 +154,21 @@ include_once(G5_THEME_PATH.'/head.php');
             </p>
           </div>
         </div>
-        <div class="info-box-wr border-ra">
-          <div class="img-box">
+        <div class="info-box-wr">
+          <div class="img-box border-ra">
             <img src="./img/sec01_2.jpg" alt="신선한재료사진">
           </div>
           <div class="txt-box">
             <h3 class="tit">맞춤형 메뉴 코스</h3>
             <p class="txt">
-              행사의 형태에 맞춘 메뉴 코스를 개발하고
-              테이블부터 조화 음향까지 다채로운 서비스를
+              행사의 형태에 맞춘 메뉴 코스를 개발하고<br>
+              테이블부터 조화 음향까지 다채로운 서비스를<br>
               제공하고 있습니다.
             </p>
           </div>
         </div>
-        <div class="info-box-wr border-ra">
-          <div class="video-box">
+        <div class="info-box-wr">
+          <div class="video-box border-ra">
             <img src="./img/sec01_3.jpg" alt="신선한재료사진">
           </div>
         </div>
@@ -165,8 +178,8 @@ include_once(G5_THEME_PATH.'/head.php');
 
   <section class="sec03">
     <div class="inner">
-      <ul>
-        <li><strong>인증현황</strong></li>
+      <ul class="flex">
+        <li class="title"><strong>인증현황</strong></li>
         <li>한국신품안전관리인증</li>
         <li>식품위생검사기관</li>
         <li>도축검사증명서</li>
@@ -177,21 +190,251 @@ include_once(G5_THEME_PATH.'/head.php');
   </section>
 
   <section class="sec04">
+    <div class="inner"> 
+      <div class="tabcontainer">
+        <div class="tit-wr">
+          <h1>SERVICE</h1>
+          <h3>서비스 소개</h3>
+        </div>
+        <!-- swiper1 -->
+        <div id="tabs" class="swiper-container swiper1">
+              <div class="tablist swiper-wrapper tab__blue" role="tablist">
+                  <div id="tab1" class="tablist__tab swiper-slide active" data-hash="tab1" data-rel="panel1" aria-selected="true" aria-controls="panel1" role="tab">출장뷔페</div>
+                  <div id="tab2" class="tablist__tab swiper-slide" data-hash="tab2" data-rel="panel2" aria-selected="false" aria-controls="panel2" role="tab">바베큐</div>
+                  <div id="tab3" class="tablist__tab swiper-slide" data-hash="tab3" data-rel="panel3" aria-selected="false" aria-controls="panel3" role="tab">국밥&비빔밥</div>
+                  <div id="tab4" class="tablist__tab swiper-slide" data-hash="tab4" data-rel="panel4" aria-selected="false" aria-controls="panel4" role="tab">다과(핑거푸드)케이터링</div>
+                  <div id="tab5" class="tablist__tab swiper-slide" data-hash="tab5" data-rel="panel5" aria-selected="false" aria-controls="panel5" role="tab">단체도시락</div>
+                  <div id="tab6" class="tablist__tab swiper-slide" data-hash="tab6" data-rel="panel6" aria-selected="false" aria-controls="panel6" role="tab">위탁급식</div>
+                  <div id="tab7" class="tablist__tab swiper-slide" data-hash="tab7" data-rel="panel7" aria-selected="false" aria-controls="panel7" role="tab">각종행사(실외행사)</div>
+              </div>
+        </div>
+        <!-- swiper2 -->
+        <div id="panels" class="swiper-container swiper2">
+            <div class="tabpanels swiper-wrapper">
+              <div class="swiper-slide swiper-slide-01 flex">
+                <div class="img-box border-ra">
+                  <img src="./img/sec04_1.jpg" alt="출장뷔페사진">
+                </div>
+                <a href="" class="txt-box border-ra">
+                  <button class="more-btn-01">
+                    <span class="material-symbols-outlined">east</span>
+                  </button>
+                  <h3>01 출장뷔페</h3>
+                  <p>다채로운 파티푸드와 호텔급 연회 서비스를
+                    제공하는 출장뷔페입니다.</p>
+                  <div class="tag-wr">
+                    <span>#결혼식</span>
+                    <span>#기업행사</span>
+                    <span>#단체행사</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide-02 flex">
+                <div class="img-box border-ra">
+                  <img src="./img/sec04_1.jpg" alt="출장뷔페사진">
+                </div>
+                <a href="" class="txt-box border-ra">
+                  <button class="more-btn-01">
+                    <span class="material-symbols-outlined">east</span>
+                  </button>
+                  <h3>01</h3>
+                  <p>.</p>
+                  <div class="tag-wr">
+                    <span>#</span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide-03 flex">
+                <div class="img-box border-ra">
+                  <img src="./img/sec04_1.jpg" alt="출장뷔페사진">
+                </div>
+                <a href="" class="txt-box border-ra">
+                  <button class="more-btn-01">
+                    <span class="material-symbols-outlined">east</span>
+                  </button>
+                  <h3>01</h3>
+                  <p>.</p>
+                  <div class="tag-wr">
+                    <span>#</span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide-04 flex">
+                <div class="img-box border-ra">
+                  <img src="./img/sec04_1.jpg" alt="출장뷔페사진">
+                </div>
+                <a href="" class="txt-box border-ra">
+                  <button class="more-btn-01">
+                    <span class="material-symbols-outlined">east</span>
+                  </button>
+                  <h3>01</h3>
+                  <p>.</p>
+                  <div class="tag-wr">
+                    <span>#</span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide-05 flex">
+                <div class="img-box border-ra">
+                  <img src="./img/sec04_1.jpg" alt="출장뷔페사진">
+                </div>
+                <a href="" class="txt-box border-ra">
+                  <button class="more-btn-01">
+                    <span class="material-symbols-outlined">east</span>
+                  </button>
+                  <h3>01</h3>
+                  <p>.</p>
+                  <div class="tag-wr">
+                    <span>#</span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide-06 flex">
+                <div class="img-box border-ra">
+                  <img src="./img/sec04_1.jpg" alt="출장뷔페사진">
+                </div>
+                <a href="" class="txt-box border-ra">
+                  <button class="more-btn-01">
+                    <span class="material-symbols-outlined">east</span>
+                  </button>
+                  <h3>01</h3>
+                  <p>.</p>
+                  <div class="tag-wr">
+                    <span>#</span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide-07 flex">
+                <div class="img-box border-ra">
+                  <img src="./img/sec04_1.jpg" alt="출장뷔페사진">
+                </div>
+                <a href="" class="txt-box border-ra">
+                  <button class="more-btn-01">
+                    <span class="material-symbols-outlined">east</span>
+                  </button>
+                  <h3>01</h3>
+                  <p>.</p>
+                  <div class="tag-wr">
+                    <span>#</span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+        </div>
+        
+      </div>
+  </section>
+
+  <section class="sec05">
     <div class="inner">
       <div class="tit-wr">
-        <h1>SERVICE</h1>
-        <h3>서비스 소개</h3>
+        <h1>NOW IS</h1>
+        <h3>도원외식산업 소식</h3>
       </div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>    
+      <div class="list-wrap">
+        <ul class="list">
+          <li>
+            <a href="" class="flex">
+              <div class="date flex">
+                <strong>07</strong>
+                <span>FRI</span>
+              </div>
+              <div class="list-cont flex">
+                <h3>프레시웨이, 외식기업 대상 맞춤형 메뉴 컨설팅 호응</h3>
+                <p>전문 셰프가 만든 우리 매장 신메뉴, 외식기업 대상 맞춤형 메뉴 컨설팅 ‘호응’ 외식기업 대상 전문 셰프 노하우 담은 메뉴 개발 지원 주점 </p>
+              </div>
+              <button class="more-btn-01"><span class="material-symbols-outlined">east</span></button>
+            </a>
+          </li>
+        </ul>
+        <ul class="list">
+          <li>
+            <a href="" class="flex">
+              <div class="date flex">
+                <strong>06</strong>
+                <span>THU</span>
+              </div>
+              <div class="list-cont flex">
+                <h3>봄 성수기 맞아 컨세션 서비스 개편…</h3>
+                <p>봄 성수기 맞아 컨세션 서비스 개편… “야구장 ‘직관 맥주’ 경험해 보세요”   광주-기아 챔피언스 필드 특별관람석 ‘비스트로 펍’ 개편, 야구장 맛집으로 인기 워 </p>
+              </div>
+              <button class="more-btn-01"><span class="material-symbols-outlined">east</span></button>
+            </a>
+          </li>
+        </ul>
+        <ul class="list">
+          <li>
+            <a href="" class="flex">
+              <div class="date flex">
+                <strong>05</strong>
+                <span>WED</span>
+              </div>
+              <div class="list-cont flex">
+                <h3>홈페이지 개설… 고객 소통 강화</h3>
+                <p>홈페이지 개설… "고객 소통, 경영 강화"  뉴스룸, 고객 상담 서비스 및 지속가능경영 콘텐츠 신설 "고객맞이.."</p>
+              </div>
+              <button class="more-btn-01"><span class="material-symbols-outlined">east</span></button>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
+
+  <section class="sec06">
+    <div class="inner">
+      <div class="cting-wr flex">
+        <a href="" alt="식자재 구매 상담" class="cting-01 border-ra">
+          <h3>식자재 구매 상담</h3>
+          <button class="more-btn-02 flex"><p>MORE</p><span class="material-symbols-outlined">east</span></button>
+          <img src="./img/sec06_icon_1.png" class="icon" alt="구매상담아이콘">
+        </a>
+        <a href="" alt="단체급식 위탁 상담"  class="cting-02 border-ra">
+          <h3>단체급식 위탁 상담</h3>
+          <button class="more-btn-02 flex"><p>MORE</p><span class="material-symbols-outlined">east</span></button>
+          <img src="./img/sec06_icon_2.png" class="icon" alt="구매상담아이콘">
+        </a>
+        <a href="" alt="협력사 상담" class="cting-03 border-ra">
+          <h3>협력사 상담</h3>
+          <button class="more-btn-02 flex"><p>MORE</p><span class="material-symbols-outlined">east</span></button>
+          <img src="./img/sec06_icon_3.png" class="icon" alt="구매상담아이콘">
+        </a>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <div class="inner flex">
+      <div class="f-info-wr">
+        <ul class="f-info flex">
+          <li>상호명 : 도원외식산업</li>
+          <li>대표 : 이천숙</li>
+          <li>사업자등록번호 : 123-45-67890</li>
+          <li>대표번호 : 055-757-3242</li>
+          <li>주소 : 경남 진주시 정촌면 화개천로 54번길 33-38</li>
+          <li>팩스번호 : 055-758-1288</li>
+          <li>메일주소 : hanbofood@hanmail.net</li>
+        </ul>
+        <span class="copyright">COPYRIGHT ⓒ 도원외식산업 ALL. RIGHTS RESERVED.</span>
+      </div>
+      <div class="f-logo">
+        <img src="./img/f_logo.png" class="icon" alt="도원외식산업로고">
+      </div>
+    </div>
+  </footer>
+
+
 
 </div><!--메인끝-->
 
