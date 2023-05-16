@@ -1,0 +1,48 @@
+
+/*서브타이틀 공통*/
+
+.sub-tit-wr { position: relative; height: 450px; }
+
+.sub-tit-wr.sub01 { background: url(/img/sub01_bg.jpg)no-repeat center / cover; }
+.sub-tit-wr.sub02 { background: url(/img/sub02_bg.jpg)no-repeat center / cover; }
+.sub-tit-wr.sub03 { background: url(/img/sub03_bg.jpg)no-repeat center / cover; }
+.sub-tit-wr.sub04 { background: url(/img/sub04_bg.jpg)no-repeat center / cover; }
+.sub-tit-wr.sub05 { background: url(/img/sub05_bg.jpg)no-repeat center / cover; }
+
+.sub-gnb { position: relative; }
+.sub-gnb li { }
+.sub-gnb li a { }
+.sub-gnb li.on a { font-weight: 900; }
+.sub-gnb li.on a::after { position:absolute; width: 100%; height: 1px; bottom: -0.2em; left: 0; background:#000; content: ''; } 
+
+
+
+
+/*신활력플러스사업*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

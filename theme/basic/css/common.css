@@ -1,0 +1,44 @@
+:root {
+    --main-padding:7.70833333333%;
+    --main-inner-padding:13.54166666667%;
+    --main-color:#199299;
+    --txt-color:#686868;
+    --gray-color:#F2F2F2;
+    --border-color:#EDEDED;
+    --light-bg-color:#F6F8F8;
+}
+
+
+.inner {padding-left: var(--main-padding);padding-right: var(--main-padding);}
+section .inner {padding-left: var(--main-inner-padding);padding-right: var(--main-inner-padding);}
+.flex {display: flex;}
+.icon {width: auto;}
+.border-ra {border-radius: 2rem; overflow: hidden;}
+
+/*헤더*/
+.header-wrap .logo {position: absolute;top:0;left: var(--main-padding); padding: 0.75em 2.125em; background: var(--main-color); border-radius: 0 0 2rem 2rem; z-index: 9999;}
+
+header.header {position: relative; height:89px; background: #fff;    z-index: 998;}
+header.header .inner { align-items: center; height:89px; line-height: ;}
+header.header .gnb {margin-left: auto;}
+header.header .gnb > li {position: relative; height: 89px; line-height: 89px; margin-right: 3.875em;font-size: 1.8rem;}
+header.header .gnb > li > a {display: block;}
+header.header .gnb > li > .depth {position: absolute;left: 50%;min-width: 130px; padding: 1em; background: #fff; transform: translateX(-50%);filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));}
+header.header .gnb > li > .depth > li {height: auto; line-height: 2; text-align: center; white-space:pre; }
+header.header .gnb > li > .depth > li > a { display: block; color: var(--txt-color); font-size: 1.6rem;}
+header.header .gnb-qa {display:inline-flex; padding: 0.625em 1.250em; border:1px solid var(--main-color); border-radius: 50px; }
+header.header .gnb-qa a { display: inline-flex; justify-content: center; align-items: center;}
+header.header .gnb-qa .text {font-size: 1.7rem;color: var(--main-color);}
+header.header .gnb-qa .m-call {display: none;}
+header.header .material-symbols-outlined {font-variation-settings:  'FILL' 1,  'wght' 400,  'GRAD' 0,  'opsz' 48;color: var(--main-color);}
+
+
+/*하단*/
+#sub .footer {margin-top: 12.7rem;}
+
+/*탑 버튼*/
+#top_btn {position:fixed;bottom:20px;right:var(--main-padding);width:50px;height:50px;line-height:46px;border:1px solid var(--border-light-gray); border-radius: 100%; color:var(--color-txt);text-align:center;font-size:15px;z-index:90;background:rgba(255,255,255,0.5); cursor: pointer; opacity: 0; transition: .5s;}
+#top_btn .material-symbols-rounded {display: block;}
+#top_btn.on {opacity: 1;}
+#top_btn:hover {border-color:#fff;background:#fff;}
+#top_btn.nofixed {bottom:350px;}

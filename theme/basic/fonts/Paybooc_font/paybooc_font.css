@@ -1,0 +1,57 @@
+
+
+@font-face {
+    font-family:'paybooc';
+    font-style: normal;
+    font-weight: 100;
+    src: url('payboocLight.eot?#iefix') format('embedded-opentype'),
+         url('payboocOTFLight.otf') format('opentype'),
+         url('payboocLight.ttf') format('truetype');
+}
+@font-face {
+    font-family:'paybooc';
+    font-style: normal;
+    font-weight: 300;
+    src: url('payboocLight.eot?#iefix') format('embedded-opentype'),
+         url('payboocOTFMedium.otf') format('opentype'),
+         url('payboocMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'paybooc';
+    font-style: normal;
+    font-weight: 600;
+    src: url('payboocBold.eot?#iefix') format('embedded-opentype'),
+         url('payboocOTFBold.otf') format('opentype'),
+         url('payboocBold.ttf') format('truetype');
+}
+@font-face {
+    font-family:'paybooc';
+    font-style: normal;
+    font-weight: 800;
+    src: url('payboocExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('payboocOTFExtraBold.otf') format('opentype'),
+         url('payboocExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'paybooc';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'paybooc-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
